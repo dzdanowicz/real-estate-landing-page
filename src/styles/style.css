@@ -5,7 +5,7 @@ body {
 .wrapper {
   max-width: 1300px;
   margin: auto;
-  padding: 44px 70px 108px 70px;
+  padding: 44px 120px 108px 120px;
 }
 
 a {
@@ -46,4 +46,8 @@ li > a {
 .log-in-nav > a {
   color: #1daeff;
   padding: 15px 37px;
+}
+
+#hero-section {
+  background-image: url(../images/Banner.png);
 }
