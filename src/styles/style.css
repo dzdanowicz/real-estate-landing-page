@@ -1,5 +1,12 @@
+:root {
+  --black: #110229;
+  --purple: #585981;
+  --grey: #8f90a6;
+}
+
 body {
   font-family: "Montserrat";
+  color: var(--black);
 }
 
 .wrapper {
@@ -22,11 +29,11 @@ nav {
 ul {
   display: flex;
   align-items: center;
-  margin: 0;
+  position: relative;
+  left: 25px;
 }
 
 li {
-  list-style: none;
   font-weight: 500;
   margin-left: 60px;
   text-transform: uppercase;
@@ -38,42 +45,68 @@ li > a {
   padding: 15px;
 }
 
-.log-in-nav {
+.nav__log-in {
   border: 1px solid #1daeff;
   border-radius: 14px;
 }
 
-.log-in-nav > a {
+.nav__log-in > a {
   color: #1daeff;
   padding: 15px 37px;
 }
 
-#hero-section {
+#hero {
   background-image: url(../images/Banner.png);
   width: calc(100% + 100px);
   height: 634px;
   margin-left: -50px;
-  background-size: unset;
   margin-top: 38px;
 }
 
-.hero-wrapper {
-  position: relative;
+.hero__wrapper {
+  /* position: relative;
   top: 92px;
-  left: 89px;
+  left: 89px; */
+  padding: 92px 0 0 89px;
 }
 
-.hero-texts {
+.hero__texts {
   width: 522px;
 }
 
-.hero-texts h1 {
+.hero__texts h1 {
   font-size: 56px;
   line-height: 68px;
 }
 
-.hero-texts p {
+.hero__texts p {
   font-size: 22px;
   line-height: 36px;
   margin-top: 49px;
+  color: var(--purple);
+}
+
+.hero__search-bar {
+  margin-top: 62px;
+}
+
+.hero__search-tabs-container {
+  display: flex;
+}
+
+.hero__search-tab {
+  padding: 0 28px;
+  line-height: 38px;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--grey);
+  letter-spacing: 0.2em;
+  cursor: pointer;
+}
+
+.selected {
+  border-radius: 15px 15px 0px 0px;
+  background-color: white;
+  color: var(--black);
 }
