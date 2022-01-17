@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/4e44bfdcca.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="src/styles/reset.css" />
     <link rel="stylesheet" href="src/styles/style.css" />
     <title>Real Estate</title>
@@ -38,7 +42,7 @@
               real estate.
             </p>
           </div>
-          <div class="hero__search-bar">
+          <div class="hero__search-container">
             <div class="hero__search-tabs-container">
               <div class="hero__search-tab selected">
                 <p>rent</p>
@@ -48,6 +52,27 @@
               </div>
               <div class="hero__search-tab">
                 <p>sell</p>
+              </div>
+            </div>
+            <div class="hero__search-bar">
+              <div class="search-bar__location search-bar__criteria">
+                <p>Location</p>
+                <p>Select Your City<i class="fas fa-map-marker-alt"></i></p>
+                <div class="line"></div>
+              </div>
+              <div class="search-bar__property search-bar__criteria">
+                <p>Property Type</p>
+                <p>Choose Property Type<i class="fas fa-chevron-down"></i></p>
+                <div class="line"></div>
+              </div>
+              <div class="search-bar__price search-bar__criteria">
+                <p>Price Range</p>
+                <p>Choose Price Range</p>
+              </div>
+              <div class="search-bar__submit search-bar__criteria">
+                <button type="submit" class="search-bar__button">
+                  <i class="fas fa-search"></i>
+                </button>
               </div>
             </div>
           </div>
