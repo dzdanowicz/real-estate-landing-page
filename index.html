@@ -19,11 +19,15 @@
     <title>Real Estate</title>
   </head>
   <body>
+    <div class="dark-layer"></div>
     <div class="wrapper">
       <header>
         <nav>
           <img src="src/images/Logo.png" alt="Logo" />
-          <ul>
+          <div class="nav__side-menu-btn">
+            <i class="fas fa-solid fa-bars"></i>
+          </div>
+          <ul class="nav__menu-items">
             <li><a href="#">Home</a></li>
             <li><a href="#">Properties</a></li>
             <li><a href="#">Agents</a></li>
@@ -302,6 +306,7 @@
               type="email"
               placeholder="Email Address"
               class="footer__newsletter-input"
+              required
             />
             <button class="footer__newsletter-btn">
               <i class="fas fa-duotone fa-arrow-right"></i>
