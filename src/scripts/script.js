@@ -21,7 +21,6 @@ document.querySelector(".nav__side-menu-btn").addEventListener("click", () => {
 });
 
 window.addEventListener("click", (elem) => {
-  console.log(elem);
   if (
     navMenuItems.classList.contains("side-menu-active") &&
     !elem.target.classList.contains("fa-solid")
